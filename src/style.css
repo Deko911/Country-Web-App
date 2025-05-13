@@ -123,6 +123,11 @@ header{
         border-radius: 18px;
         overflow: hidden;
         box-shadow: 2px 2px 2px black;
+
+        @media (max-width: 35rem) {
+        width: 90%;
+        box-sizing: border-box;
+    }
     }
 
     .weatherInfo{
