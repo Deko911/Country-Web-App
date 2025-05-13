@@ -1,0 +1,153 @@
+:root{
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: #010101;
+    font-size: large;
+}
+
+body{
+    margin: 0;
+    background: #8eb6ff;
+    overflow-x: hidden;
+}
+
+main {
+    width: 80%;
+    justify-self: center;
+
+    @media (max-width: 35rem) {
+        width: 100%;
+    }
+}
+
+header{
+    background-color: #f0f4f8;
+    padding: 25px;
+    font-size: x-large;
+    text-align: center;
+    box-shadow: 2px 0 2px 0.1px black;
+    margin-bottom: 10px;
+
+    input {
+        border: none;
+        border-radius: 18px;
+        font-size: x-large;
+        background-color: rgba(50, 50, 50, 0.2);
+        color: #010101;
+    }
+}
+
+.CountryList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    @media (max-width: 35rem) {
+        grid-template-columns: 1fr;
+    }
+
+    .unResalted{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        gap: 10px;
+        padding: 15px 20px;
+        background-color: rgba(50, 50, 50, 0.1);
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px  rgba(50, 50, 50, 0.2);
+        transition: all 0.1s ease-in-out;
+        height: 50px;
+    }
+
+    .unResalted img{
+        height: 100%;     
+    }
+
+    .unResalted:hover{
+        scale: 1.05;
+        background-color: rgba(50, 50, 50, 0.2);
+    }
+
+
+}
+
+
+.resalted {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+
+    @media (max-width: 35rem) {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img {
+        height: 100px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        padding: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .close:hover{
+        scale: 1.3;
+    }
+    
+    .countryInfo{
+        position: relative;
+        background-color: white;
+
+        .flag {
+            text-align: center;
+        }
+
+    }
+
+    .countryInfo, .weatherInfo{
+        padding: 1.5rem;
+        width: 50%;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    .weatherInfo{
+        background-color: #dbe7ff;
+
+        .weatherImg{
+            text-align: center;
+        }
+    }
+
+    .error{
+        display: flex;
+        background-color: #f64242;
+        place-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
