@@ -27,6 +27,7 @@ header{
     text-align: center;
     box-shadow: 2px 0 2px 0.1px black;
     margin-bottom: 10px;
+    overflow: hidden;
 
     input {
         border: none;
@@ -36,6 +37,11 @@ header{
         background-color: rgba(50, 50, 50, 0.2);
         color: #010101;
     }
+    
+    @media (max-width: 35rem) {
+        padding: 10px;
+    }
+
 }
 
 .CountryList{
