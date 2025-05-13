@@ -36,7 +36,7 @@ const CountriesList = ({countries, search}) => {
     setWeather(null);
   }
 
-  if(countries.length > 10){
+  if(countries.length > 20){
     return (
       <main>
         {resalted ? <Country country={resalted} resalted={true} onClick={() => handleClick(resalted)} weather={weather}/> : ''}
