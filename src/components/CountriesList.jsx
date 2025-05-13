@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import weatherServices from '../services/weatherAPI'
+import Weather from './Weather';
 
 const CountriesList = ({countries, search}) => {
   const [resalted, setResalted] = useState(null);
