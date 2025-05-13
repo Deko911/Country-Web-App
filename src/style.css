@@ -32,6 +32,7 @@ header{
         border: none;
         border-radius: 18px;
         font-size: x-large;
+        padding-left: 10px;
         background-color: rgba(50, 50, 50, 0.2);
         color: #010101;
     }

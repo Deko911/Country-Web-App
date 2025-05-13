@@ -1,4 +1,4 @@
-const baseURL = "http://api.weatherapi.com/v1/current.json";
+const baseURL = "https://api.weatherapi.com/v1/current.json";
 
 const getWeatherFromCity = (city) => {
 
